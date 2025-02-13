@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+    background-color: black;
+}
+
+#root {
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    width: 100vw;
+}
+
+main {
+    aspect-ratio: 3 / 2;
+    max-height: 100dvh;
+    max-width: 100vw;
+    width: min(100vw, calc(100dvh * 1.5));
+    height: min(100dvh, calc(100vw / 1.5));
+}
